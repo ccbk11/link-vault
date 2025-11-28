@@ -1,0 +1,34 @@
+name: CI - Docker Build Test
+
+# 1. TETİKLEYİCİ (TRIGGER)
+# Bu iş akışı ne zaman çalışsın?
+on:
+  push:
+    branches: [ "main" ] # main branch'ine push yapıldığında
+  pull_request:
+    branches: [ "main" ] # main'e birleştirme isteği geldiğinde
+
+# 2. GÖREVLER (JOBS)
+jobs:
+  docker-build:
+    # Bu görev nerede çalışsın? (GitHub'ın Linux sunucusunda)
+    runs-on: ubuntu-latest
+
+    steps:
+      # Adım 1: Kodunu GitHub deposundan bu sanal sunucuya çek
+      - name: Kodu Çek (Checkout)
+        uses: actions/checkout@v4
+
+      # Adım 2: Docker Buildx aracını kur (Hızlı build için)
+      - name: Docker Buildx Kurulumu
+        uses: docker/setup-buildx-action@v3
+
+      # Adım 3: Docker İmajını Oluştur (Sadece test et, bir yere yükleme)
+      - name: Build Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: false # False = Sadece build alıp test et, bir yere atma
+          tags: linkvault:test
+          cache-from: type=gha # GitHub Cache kullanarak hızlandır
+          cache-to: type=gha,mode=max

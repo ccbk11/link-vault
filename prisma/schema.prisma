@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+  // Windows (senin için) ve Linux-Musl (Docker için) desteği ekliyoruz
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+// Veritabanında oluşacak 'Link' tablosu
+model Link {
+  id          Int      @id @default(autoincrement()) // 1, 2, 3 diye artar
+  url         String   // Link adresi
+  title       String   // Başlık
+  description String?  // Açıklama (Opsiyonel)
+  aiSummary   String?  // AI Özeti (İleride kullanacağız)
+  createdAt   DateTime @default(now()) // Kayıt tarihi
+}
