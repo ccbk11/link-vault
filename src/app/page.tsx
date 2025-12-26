@@ -21,14 +21,14 @@ export default async function Home() {
         {/* Başlık Alanı */}
         <header className="mb-10 text-center">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            MAIN BRANCH LinkVault 🚀
+            TEST BRANCH LinkVault 🚀
           </h1>
           <p className="text-slate-400 mt-2">DevOps & AI Destekli Link Arşividir bu.</p>
         </header>
 
         {/* Ekleme Formu */}
         <div className="bg-slate-900 p-6 rounded-xl border border-slate-800 mb-10 shadow-lg">
-          <h2 className="text-xl font-semibold mb-4">Yeni Link Ekle</h2>
+          <h2 className="text-xl font-semibold mb-4">Yeni Link Ekle:</h2>
           {/* action kısmına az önce yazdığımız fonksiyonu veriyoruz */}
           <form action={createLink} className="flex flex-col gap-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
