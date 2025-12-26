@@ -21,7 +21,7 @@ export default async function Home() {
         {/* Başlık Alanı */}
         <header className="mb-10 text-center">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            LinkVault 🚀
+            MAIN BRANCH LinkVault 🚀
           </h1>
           <p className="text-slate-400 mt-2">DevOps & AI Destekli Link Arşividir bu.</p>
         </header>
