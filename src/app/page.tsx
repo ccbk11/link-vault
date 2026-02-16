@@ -56,7 +56,7 @@ export default async function Home() {
               type="submit"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition duration-200"
             >
-              Arşive Kaydet
+              Arşive Kaydet !
             </button>
           </form>
         </div>
