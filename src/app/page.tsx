@@ -17,11 +17,11 @@ export default async function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-200 p-8">
       <div className="max-w-4xl mx-auto">
-        
+
         {/* Başlık Alanı */}
         <header className="mb-10 text-center">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            TEST BRANCH LinkVault 🚀
+            TEST BRANCH LinkVault 🚀..
           </h1>
           <p className="text-slate-400 mt-2">DevOps & AI Destekli Link Arşividir bu.</p>
         </header>
@@ -64,7 +64,7 @@ export default async function Home() {
         {/* Link Listesi */}
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold mb-4">Arşivlenenler ({links.length})</h2>
-          
+
           {links.length === 0 ? (
             <p className="text-center text-slate-500 py-10">Henüz hiç link eklenmemiş.</p>
           ) : (
