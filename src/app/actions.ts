@@ -9,7 +9,7 @@ export async function createLink(formData: FormData) {
   const title = formData.get("title") as string
   const description = formData.get("description") as string
 
-  // Basit bir doğrulama
+  // Basit bir doğrulama yapma
   if (!url || !title) return
 
   // Veritabanına kayıt işlemi (INSERT INTO...)
