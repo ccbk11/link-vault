@@ -26,6 +26,7 @@ export default async function Home() {
           <p className="text-slate-400 mt-2">DevOps & AI Destekli Link Arşividir bu.</p>
         </header>
 
+
         {/* Ekleme Formu */}
         <div className="bg-slate-900 p-6 rounded-xl border border-slate-800 mb-10 shadow-lg">
           <h2 className="text-xl font-semibold mb-4">Yeni Link Ekle:</h2>
