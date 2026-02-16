@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "LinkVault",
-  description: "DevOps & AI Link Arşivi",
+  description: "DevOps & AI Link Arşivi ...",
 };
 
 export default function RootLayout({
