@@ -28,7 +28,7 @@ export default async function Home() {
 
         {/* Ekleme Formu */}
         <div className="bg-slate-900 p-6 rounded-xl border border-slate-800 mb-10 shadow-lg">
-          <h2 className="text-xl font-semibold mb-4">Yeni Link Ekle</h2>
+          <h2 className="text-xl font-semibold mb-4">Yeni Link Ekleme Alanı</h2>
           {/* action kısmına az önce yazdığımız fonksiyonu veriyoruz */}
           <form action={createLink} className="flex flex-col gap-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
